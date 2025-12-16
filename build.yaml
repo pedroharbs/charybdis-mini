@@ -21,7 +21,15 @@
 include:
   - board: nice_nano
     shield: charybdis_left
+    keymap: qwerty
+    format: bt
+    artifact-name: charybdis_qwerty_left
   - board: nice_nano
     shield: charybdis_right
+    keymap: qwerty
+    format: bt
+    artifact-name: charybdis_qwerty_right
   - board: nice_nano
     shield: settings_reset
+    format: reset
+    artifact-name: firmware_reset_nano_v2
