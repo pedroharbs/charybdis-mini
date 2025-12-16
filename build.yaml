@@ -6,22 +6,22 @@
 # `artifact-name` to assign a name to distinguish build outputs from each other:
 #
 # board: [ "nice_nano" ]
-# shield: [ "charybdis_mini_left", "charybdis_mini_right" ]
+# shield: [ "charybdis_left", "charybdis_right" ]
 # include:
 #   - board: bdn9_rev2
 #   - board: nice_nano
 #     shield: reviung41
 #   - board: nice_nano
-#     shield: charybdis_mini_left
+#     shield: charybdis_left
 #     snippet: studio-rpc-usb-uart
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
-#     artifact-name: charybdis_mini_left_with_studio
+#     artifact-name: charybdis_left_with_studio
 #
 ---
 include:
   - board: nice_nano
-    shield: charybdis_mini_left
+    shield: charybdis_left
   - board: nice_nano
-    shield: charybdis_mini_right
+    shield: charybdis_right
   - board: nice_nano
     shield: settings_reset

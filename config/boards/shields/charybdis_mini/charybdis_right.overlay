@@ -1,4 +1,4 @@
-#include "charybdis_mini.dtsi"
+#include "charybdis.dtsi"
 
 &default_transform {
     col-offset = <6>;
