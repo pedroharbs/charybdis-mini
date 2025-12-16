@@ -73,10 +73,10 @@
             //                    | GUI | LWR | SPC |   | SPC | L2   | L1  |
 
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E     &kp R         &kp T        &kp Y      &kp U  &kp I          &kp O                  &kp P          &kp BSPC
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D     &kp F         &kp G        &kp H      &kp J  &kp K          &kp L                  &kp SEMI       &kp ENTER
-&kp LCTRL       &kp Z  &kp X  &kp C     &kp V         &kp B        &kp N      &kp M  &mt COMMA DOT  &mt SQT DOUBLE_QUOTES  &mt STAR FSLH  &kp ESC
-                              &kp LGUI  &kp LEFT_ALT  &kp SPACE    &kp SPACE  &mo 2  &mo 1
+&mt ESCAPE TAB  &kp Q  &kp W  &kp E     &kp R         &kp T        &kp Y      &kp U  &kp I                &kp O                    &kp P                &kp BSPC
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D     &kp F         &kp G        &kp H      &kp J  &kp K                &kp L                    &mt COLON SEMICOLON  &mt DOUBLE_QUOTES SQT
+&kp LCTRL       &kp Z  &kp X  &kp C     &kp V         &kp B        &kp N      &kp M  &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &mt QUESTION SLASH   &mt PIPE BACKSLASH
+                              &kp LGUI  &kp LEFT_ALT  &kp SPACE    &kp ENTER  &mo 1  &kp RIGHT_ALT
             >;
         };
 
@@ -88,34 +88,18 @@
             //                    |     |     | SPC |   | SPC |     |     |
 
             bindings = <
-&sys_reset  &trans  &trans    &trans    &trans     &trans       &trans   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0  &trans
-&trans      &trans  &trans    &kp UP    &trans     &trans       &trans   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
-&trans      &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans       &trans   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans
-                              &trans    &trans     &kp SPACE    &kp SPACE  &trans        &trans
-            >;
-        };
-
-        raise_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  &  |  %  |   |  ^  |  $  |  *  |  (  |  )  | BSPC |
-            // | CTRL |MUTE |V_UP |V_DWN|  <  |  >  |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | SPC |     | ALT |
-
-            bindings = <
-&kp TAB    &kp EXCL     &kp AT              &kp HASH            &kp AMPERSAND  &kp PRCNT           &kp CARET  &kp DOLLAR  &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &kp C_MUTE   &kp C_VOLUME_DOWN   &kp C_VOLUME_UP     &kp LESS_THAN  &kp GREATER_THAN    &kp MINUS  &kp EQUAL   &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans       &trans              &trans              &trans         &trans              &kp UNDER  &kp PLUS    &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                            &kp LGUI            &trans         &kp SPACE           &kp SPACE    &trans      &kp RALT
+&mt TILDE GRAVE  &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2  &mt HASH NUMBER_3     &mt DOLLAR NUMBER_4   &mt PERCENT N5     &mt CARET NUMBER_6  &mt AMPERSAND N7   &mt ASTERISK N8       &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0  &mt UNDERSCORE MINUS
+&trans           &trans                    &trans                &kp K_MUTE            &kp C_VOLUME_DOWN     &kp C_VOLUME_UP    &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans                    &mt PLUS EQUAL
+&kp CAPS         &trans                    &trans                &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp UP_ARROW       &kp LEFT_BRACE      &kp RIGHT_BRACE    &kp HOME              &kp END                  &kp DELETE                &trans
+                                                                 &kp LEFT_ARROW        &kp DOWN_ARROW        &kp RIGHT_ARROW    &kp ENTER           &trans             &trans
             >;
         };
     };
 };
 
-
 //For new Layers
-    // -----------------------------------------------------------------------------------------
-    // |      |     |     |     |     |     |   |     |     |     |     |     |      |
-    // |      |     |     |     |     |     |   |     |     |     |     |     |      |
-    // |      |     |     |     |     |     |   |     |     |     |     |     |      |
-    //                    |     |     |     |   |     |     |     |
+// -----------------------------------------------------------------------------------------
+// |      |     |     |     |     |     |   |     |     |     |     |     |      |
+// |      |     |     |     |     |     |   |     |     |     |     |     |      |
+// |      |     |     |     |     |     |   |     |     |     |     |     |      |
+//                    |     |     |     |   |     |     |     |
