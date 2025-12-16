@@ -1,0 +1,15 @@
+if SHIELD_CHARYBDIS_MINI_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "CharybdisMini"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_CHARYBDIS_MINI_LEFT || SHIELD_CHARYBDIS_MINI_RIGHT
+
+config ZMK_SPLIT
+    default y
+endif
